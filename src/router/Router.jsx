@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "@/App";
 import Member from "@pages/Member/Member";
-import LectureRouter from "@router/LectureRouter.jsx";
+import LectureNavbar from "@components/navbar/LectureNavbar.jsx";
 import RegistLecture from "@pages/Lecture/RegistLecture";
 import Notice from "@pages/Community/Notice";
 import Qna from "@pages/Community/Qna";
 import Concern from "@pages/Community/Concern";
 import Home from "@pages/Home/Home";
-import CommunityRouter from "@router/CommunityRouter.jsx";
+import CommunityNavbar from "@/components/navbar/CommunityNavbar.jsx";
 import LectureIntro from "@pages/Lecture/LectureIntro";
 import LectureOrder from "@pages/Lecture/LectureOrder";
 import LectureQna from "@pages/Lecture/LectureQna";
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "community",
-        element: <CommunityRouter />,
+        element: <CommunityNavbar />,
         children: [
           {
             path: "notice",
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
       },
       {
         path: "lecture",
-        element: <LectureRouter />,
+        element: <LectureNavbar />,
         children: [
           {
             path: "introduce",

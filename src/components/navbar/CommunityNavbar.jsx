@@ -6,64 +6,14 @@ import { Outlet } from "react-router-dom";
 import {
   StyledNav,
   StyledDiv,
-} from "./LectureRouterStyle";
-const AdminLecture = () => {
+} from "./CommunityNavbar.Style";
+const AdminCommunity = () => {
   const location = useLocation();
   return (
     <div>
       <div>
         <StyledNav>
-          <Link to="/lecture/introduce">
-            <StyledDiv
-              active={
-                location.pathname.includes(
-                  "introduce"
-                )
-                  ? "true"
-                  : undefined
-              }
-            >
-              강의소개
-            </StyledDiv>
-          </Link>
-          <Link to="/lecture/order">
-            <StyledDiv
-              active={
-                location.pathname.includes(
-                  "order"
-                )
-                  ? "true"
-                  : undefined
-              }
-            >
-              목차
-            </StyledDiv>
-          </Link>
-          <Link to="/lecture/qna">
-            <StyledDiv
-              active={
-                location.pathname.includes("qna")
-                  ? "true"
-                  : undefined
-              }
-            >
-              QnA
-            </StyledDiv>
-          </Link>
-          <Link to="/lecture/course-review">
-            <StyledDiv
-              active={
-                location.pathname.includes(
-                  "course-review"
-                )
-                  ? "true"
-                  : undefined
-              }
-            >
-              수강평
-            </StyledDiv>
-          </Link>
-          <Link to="/lecture/notice">
+          <Link to="/community/notice">
             <StyledDiv
               active={
                 location.pathname.includes(
@@ -76,10 +26,34 @@ const AdminLecture = () => {
               공지사항
             </StyledDiv>
           </Link>
+          <Link to="/community/qna">
+            <StyledDiv
+              active={
+                location.pathname.includes("qna")
+                  ? "true"
+                  : undefined
+              }
+            >
+              QnA
+            </StyledDiv>
+          </Link>
+          <Link to="/community/concern">
+            <StyledDiv
+              active={
+                location.pathname.includes(
+                  "concern"
+                )
+                  ? "true"
+                  : undefined
+              }
+            >
+              고민
+            </StyledDiv>
+          </Link>
         </StyledNav>
       </div>
       <Outlet />
     </div>
   );
 };
-export default AdminLecture;
+export default AdminCommunity;

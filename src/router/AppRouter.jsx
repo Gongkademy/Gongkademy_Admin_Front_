@@ -5,7 +5,7 @@ import {
 import {
   StyledNav,
   StyledDiv,
-} from "@router/AppRouter";
+} from "@router/AppRouter.style";
 
 export default function AppRouter() {
   const location = useLocation();
