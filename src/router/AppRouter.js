@@ -13,7 +13,8 @@ export const StyledDiv = styled.div`
   width: 216px;
   height: 48px;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
+  color: #222325;
   padding: 12px;
   background-color: ${(props) =>
     props.active

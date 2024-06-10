@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "@components/header/Header";
 import { Outlet } from "react-router-dom";
-import AppRouter from "@router/AppRouter";
+import AppRouter from "@router/AppRouter.jsx";
 import { Link } from "react-router-dom";
 import "@/App.css";
 function App() {

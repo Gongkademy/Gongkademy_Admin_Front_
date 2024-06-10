@@ -39,7 +39,7 @@ export default function AppRouter() {
             <div>&gt;</div>
           </StyledDiv>
         </Link>
-        <Link to="/lecture">
+        <Link to="/lecture/introduce">
           <StyledDiv
             active={
               location.pathname.includes(
@@ -49,7 +49,7 @@ export default function AppRouter() {
                 : undefined
             }
           >
-            <div>강의회원관리</div>
+            <div>강의</div>
             <div>&gt;</div>
           </StyledDiv>
         </Link>
